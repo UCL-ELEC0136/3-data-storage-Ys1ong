@@ -71,7 +71,7 @@ Figure 3:SQL Workshop dashboard
 ## 2 Guided Tasks
 
 ### 2.1 Create Table database
-
+LA
 Begin by loading our weather data from four cities in Denmark, from a spread-
 sheet to a Table database.
 
@@ -175,7 +175,7 @@ Run the next SQL command:
 [6] SELECT CITY_WEATHER.CITY, PRESSURE, TEMP FROM CITY_DETAILS, CITY_WEATHER
 WHERE CITY_DETAILS.CITY = CITY_WEATHER.CITY
 AND CITY_WEATHER.DATETIME = ’06/07/1980’
-AND CITY_DETAILS.LATITUTE > 57;
+AND CITY_DETAILS.LATITUDE > 57;
 
 
 
