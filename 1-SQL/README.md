@@ -133,7 +133,7 @@ Run the following SQL commands to create and populate a new table.
 /* Delete old Table */
 DROP TABLE CITY_DETAILS;
 
-/* Create Table */
+/* Create Tables */
 CREATE TABLE CITY_DETAILS
 (CITY VARCHAR2(50) NOT NULL ,
 POPULATION NUMBER,
