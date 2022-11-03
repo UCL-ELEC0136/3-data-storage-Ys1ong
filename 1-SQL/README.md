@@ -71,7 +71,7 @@ Figure 3:SQL Workshop dashboard
 ## 2 Guided Tasks
 
 ### 2.1 Create Table database
-
+LA
 Begin by loading our weather data from four cities in Denmark, from a spread-
 sheet to a Table database.
 
@@ -133,7 +133,7 @@ Run the following SQL commands to create and populate a new table.
 /* Delete old Table */
 DROP TABLE CITY_DETAILS;
 
-/* Create Table */
+/* Create Table * /
 CREATE TABLE CITY_DETAILS
 (CITY VARCHAR2(50) NOT NULL ,
 POPULATION NUMBER,
@@ -144,18 +144,18 @@ PRIMARY KEY(CITY) /* Unique Identifier of each registry */
 
 /* Insert Data in Table */
 INSERT INTO CITY_DETAILS (CITY, POPULATION, LATITUDE, LONGITUDE)
-VALUES (’Aalborg’, 163231, 57.2, 9.55 );
+VALUES ('Aalborg', 163231, 57.2, 9.55 );
 
 INSERT INTO CITY_DETAILS (CITY, POPULATION, LATITUDE, LONGITUDE)
 
 
-VALUES (’Aarhus’, 336411, 56.8, 10.13);
+VALUES ('Aarhus', 336411, 56.8, 10.13);
 
 INSERT INTO CITY_DETAILS (CITY, POPULATION, LATITUDE, LONGITUDE)
-VALUES (’Odense’, 185206, 55.23, 10.23 );
+VALUES ('Odense', 185206, 55.23, 10.23 );
 
 INSERT INTO CITY_DETAILS (CITY, POPULATION, LATITUDE, LONGITUDE)
-VALUES (’Roskilde’, 50393, 55.38, 12.5 );
+VALUES ('Roskilde', 50393, 55.38, 12.5 );
 
 ### 2.4 Query Specific information
 
@@ -175,7 +175,7 @@ Run the next SQL command:
 [6] SELECT CITY_WEATHER.CITY, PRESSURE, TEMP FROM CITY_DETAILS, CITY_WEATHER
 WHERE CITY_DETAILS.CITY = CITY_WEATHER.CITY
 AND CITY_WEATHER.DATETIME = ’06/07/1980’
-AND CITY_DETAILS.LATITUTE > 57;
+AND CITY_DETAILS.LATITUDE > 57;
 
 
 
